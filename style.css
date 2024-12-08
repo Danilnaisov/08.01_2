@@ -15,7 +15,11 @@
   padding: 0;
   list-style: none;
   box-sizing: border-box;
-  /* border: 1px rgba(255, 0, 0, 0.1) solid; */
+  border: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
 ul li {
   cursor: pointer;
@@ -71,6 +75,7 @@ header img {
 .footer h3 {
   font-family: Fontspring;
   font-size: 32px;
+  cursor: pointer;
 }
 .header ul {
   display: flex;
@@ -162,6 +167,7 @@ main {
   font-size: 16px;
   font-weight: 500;
   transition: all 0.2s ease-in;
+  font-family: Satoshi;
 }
 .white {
   color: #000;
@@ -251,6 +257,16 @@ main {
   gap: 20px;
   width: 100%;
 }
+.card__img {
+  width: 295px;
+  height: 295px;
+}
+.card__img img {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .main__block hr {
   max-width: 1440px;
   width: 100%;
@@ -278,6 +294,8 @@ main {
   color: #000;
   font-size: 20px;
   font-weight: 700;
+  width: 295px;
+  text-wrap: wrap;
 }
 .card__review {
   display: flex;
@@ -418,7 +436,7 @@ main {
   padding: 28px 32px;
   align-items: flex-start;
   align-content: flex-start;
-  gap: 24px 342px;
+  gap: 24px 24px;
   flex-wrap: wrap;
   border-radius: 20px;
   border: 1px solid rgba(0, 0, 0, 0.1);
